@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Restaurant</title>
+
+    <style>
+        .taco {
+            width: 150px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <header> <!--Encabezado-->
+        <h1>Max Restaurant</h1>
+        <p><i>The best tacos in town</i></p>
+        <img id="header-img" width="150" src="https://i.pinimg.com/1200x/8d/99/71/8d9971de2a64bcf22c1ea50ab99fe0bc.jpg"
+            alt="Tacos al pastor" />
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li> <!--Apunta a la seccion del menu-->
+                <li><a href="#order-form">Order Form</a></li> <!--Apunta a la seccion de la orden-->
+            </ul>
+        </nav>
+    </header>
+    <hr />
+    <main>
+        <section id="menu"> <!--Menu-->
+            <h2>Menu</h2>
+            <article>
+                <h3>Pastor</h3>
+                <p>Pork marinated with achiote and spices, cooked on a vertical rotisserie, served with pineapple, onion
+                    and cilantro.</p>
+                <p><i>order of 5 for 3 dollars</i></p>
+                <img class="taco" src="https://i.pinimg.com/1200x/00/91/31/009131927cdd1972a5a7598371ae25b4.jpg" />
+            </article>
+            <article>
+                <h3>Suadero</h3>
+                <p>Tender and juicy beef, slowly cooked in its own fat, with intense flavor and tender texture.</p>
+                <p><i>order of 5 for 2 dollars</i></p>
+                <img class="taco" src="https://i.pinimg.com/1200x/31/81/43/318143a1f2d0061250763ed5a8a92c06.jpg" />
+            </article>
+            <article>
+                <h3>Barbacoa</h3>
+                <p>Beef that has been steamed for hours, very tender and juicy, traditionally accompanied by onion and
+                    cilantro.</p>
+                <p><i>order of 5 for 10 dollars</i></p>
+                <img class="taco" src="https://i.pinimg.com/1200x/e4/eb/bd/e4ebbd7ddd8678396a3258c315eb93ef.jpg" />
+            </article>
+        </section>
+        <hr />
+        <section id="order-form"> <!--Order Form-->
+            <h2>Order Form</h2>
+            <form>
+                <label for="pastor">How many orders of Pastor: </label><input type="number" min="0" id="pastor"><br><br>
+                <label for="suadero">How many orders of Suadero: </label><input type="number" min="0"
+                    id="suadero"><br><br>
+                <label for="barbacoa">How many orders of Barbacoa: </label> <input type="number" min="0"
+                    id="barbacoa"><br><br>
+                <h3>Select your drink</h3>
+                <input type="radio" name="group" id="fanta"><label for="fanta">Fanta</label>
+                <input type="radio" name="group" id="sprite"><label for="sprite">Sprite</label>
+                <input type="radio" name="group" id="coke"><label for="coke">Coke</label>
+                <input type="radio" name="group" id="apple"><label for="apple">Apple Juice</label>
+                <br><br>
+                <textarea rows="7" cols="42" placeholder="Details or special requests"></textarea><br><br>
+                <input type="submit" value="Go to Checkout">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Made with love by Max Velasco :P</p>
+    </footer>
+</body>
+
+</html>
